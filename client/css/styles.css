@@ -1,6 +1,14 @@
 html {
   background-color: lightsteelblue;
 }
-body {
-  text-align: center;
+ul {
+    list-style-type: none;
+}
+
+.WelcomeHeading {
+  text-align: center
+}
+
+.LoginButton {
+  margin-left: 170px;
 }

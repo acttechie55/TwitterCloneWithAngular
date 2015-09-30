@@ -1,5 +1,14 @@
-<h1> This is the Login Page </h1>
-<h3> Until I figure out what I am doing, just click this button to go to your tweets</h3>
-<p>Include a user input for a username</p>
-</p> My button needs to get to welcome.html</p>
-<button ng-click="">Log-In</button>
+<!--This is the Log-In Page -->
+<div class="WelcomeHeading">
+<h1> Welcome to Twitter </h1>
+<h3> Log-In and Get To Tweeting!</h3>
+</div><br>
+<p>Enter Username and Password</p>
+<form name="form">
+  <label name="loginName">Username</label>
+  <input type="text" name="loginName" ng-model="loginName" placeholder="Your Username Here" required /><br>
+  <!--<label name="Password">Password</label>
+  <input type="password" name="password" ng-model="password" placeholder="Your Password Here"></form>
+  -->
+</form>
+<button class="LoginButton" ng-click="login()">Log-In</button>
