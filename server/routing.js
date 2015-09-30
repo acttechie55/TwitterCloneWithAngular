@@ -16,7 +16,6 @@ function handleRequests(req, res) {
     if(route === '/') {
         route = '/index.html';
     }
-    console.log('route: ' + route);
     var ext = getFileExtension(route);
     switch (ext) {
         case 'css':
