@@ -1,1 +1,15 @@
-<h1>Hello World 2!</h1>
+<div class="container"></div>
+	<div class="jumbotron">
+		<h1>Welcome to {{ userName }} Twitter</h1>
+		<span>User:</span><input class="tweet-user" type="text" ng-model="tweetUser" />
+							<span>Enter Tweet:</span>
+							<input class="tweet-text" type="text" ng-model="tweet"/>
+							<button class="tweet-button" ng-click="postTweet()">Submit Tweet</button>
+	</div>
+	<div class="row tweets">
+		<ul>
+			<li ng-repeat="tweet in tweets"> {{tweet.user}}: {{tweet.text}}<li>
+		</ul>
+		</div>
+</div>
+		
